@@ -3,42 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lojik Properies</title>
+    <title>Lojik Properties</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body, html {
-            height: 100%;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
         }
-        
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
-        
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
         h1 {
             font-size: 48px;
-            color: #333;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
-        
         img {
-            max-width: 80%;
-            max-height: 60vh;
-            object-fit: contain;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Lojik Properies</h1>
-        <img src="LojikPropertiesLogo.png" alt="Lojik Properies Logo">
+    <header>
+        <h1>Lojik Properties</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+    </nav>
+    <div class="container" id="home">
+        <img src="LojikPropertiesLogo.png" alt="Lojik Properties Logo">
+        <p></p>
     </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Lojik Properties owns over 70 multifamily & retail units in New Hampshire and Massachusetts.  Our investing experience goes back to 2006.  We are long-term investors who are good stewards of the properties that we invest in.  It is our belief that we should provide a good product for our tenants and the communities that we serve.</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Lojik Properties. All rights reserved.</p>
+    </footer>
 </body>
 </html>
